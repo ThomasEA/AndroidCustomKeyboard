@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- button pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="0dp"/>
+            <solid android:color="@color/button_confirm_pressed"/>
+        </shape>
+    </item>
+
+    <!-- button focus -->
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="0dp"/>
+            <solid android:color="@color/button_confirm_focused"/>
+        </shape>
+    </item>
+
+    <!-- button normal -->
+    <item>
+        <shape>
+            <corners android:radius="0dp"/>
+            <solid android:color="@color/button_confirm_normal"/>
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+</selector>

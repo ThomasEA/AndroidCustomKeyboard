@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">KeyboardApp</string>
+    <string name="app_caption">Custom keyboard example</string>
+    <string name="dialog_title">Dialog Title</string>
+</resources>

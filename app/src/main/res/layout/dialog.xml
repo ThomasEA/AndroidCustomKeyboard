@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/keyboard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_title"/>
+
+    <EditText
+        android:id="@+id/keyboard_input"
+        style="@android:style/Widget.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:inputType="none"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/keyboard_title"
+        android:layout_alignRight="@+id/keyboard_keys"
+        android:layout_alignLeft="@+id/keyboard_keys"
+        android:layout_marginTop="10dp"/>
+
+    <me.worksit.keyboardapp.ui.DecimalKeyboard
+        android:id="@+id/keyboard_keys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:keyBackground="@drawable/button_keyboard"
+        android:background="@android:color/background_dark"
+        android:focusableInTouchMode="true"
+        android:keyTextSize="@dimen/size_keyboard_keypad"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/keyboard_input" />
+
+</RelativeLayout>
